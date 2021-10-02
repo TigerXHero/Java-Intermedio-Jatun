@@ -4,7 +4,7 @@
  * @author (Isaias) 
  * @version (1.0)
  */
-public class Ejercicio3
+public class Ejercicio03
 {
     public int numeroDeDigitosPares(int num)
     {

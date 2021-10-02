@@ -4,7 +4,7 @@
  * @author (Isaias) 
  * @version (1.0)
  */
-public class Ejercicio4
+public class Ejercicio04
 {
     public String numeroMO(int num)
     {

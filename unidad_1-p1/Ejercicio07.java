@@ -4,7 +4,7 @@
  * @author Isaias
  * @version 1.0
  */
-public class Ejercicio7
+public class Ejercicio07
 {
     public String esCreciente(int n){
         String res = "";

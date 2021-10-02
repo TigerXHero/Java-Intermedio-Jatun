@@ -4,7 +4,7 @@
  * @author Isaias
  * @version 1.0
  */
-public class Ejercicio6
+public class Ejercicio06
 {
     public int restaDeNumeros(int n, int m)
     {
