@@ -1,0 +1,3 @@
+#ignora archivos java compilados
+*.class
+*.ctxt
