@@ -125,6 +125,24 @@ public class ArbolBin<T>
         }
     }
     
-    
+    //Ejercicio 5 cuantos nodos tiene 1 hijo
+    public int contarNodosConUnHijo(){
+        int res;
+        int cont = 0;
+        if(!estaVacio()){
+            if(!izq.estaVacio() && der.estaVacio()){
+                res = 1;
+            }else{
+                if(!der.estaVacio() && izq.estaVacio()){
+                    res = 1;
+                }else{
+                    res = izq.contarNodosConUnHijo() + der.contarNodosConUnHijo();
+                }
+            }
+        }else{
+            res = 0;
+        }
+        return res;
+    }
 
 }
