@@ -1,4 +1,4 @@
 #ignora archivos java compilados
 *.class
 *.ctxt
-package.bluej
+*.bluej
