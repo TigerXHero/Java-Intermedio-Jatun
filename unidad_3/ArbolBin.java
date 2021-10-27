@@ -38,7 +38,7 @@ public class ArbolBin<T>
     public void preOrden(){
         if(!estaVacio()){
             System.out.print(raiz + "");
-            izq.preOrden();
+            izq.preOrden(); 
             der.preOrden();
         }
     }
@@ -116,19 +116,21 @@ public class ArbolBin<T>
     //Ejercicio 4 eliminar dato de 1 nodo hoja
     public void eliminarUnaHoja(T dato){ 
         if(!estaVacio()){
-            if(raiz == dato){
-                raiz = null;
-            }else{
-                izq.eliminarUnaHoja(dato);
-                der.eliminarUnaHoja(dato);
-            }
+            if(esHoja()){
+                if(raiz == dato){
+                    raiz = null;
+                }else{
+                    izq.eliminarUnaHoja(dato);
+                    der.eliminarUnaHoja(dato);
+                }
+            }            
         }
     }
-    
+
     //Ejercicio 5 cuantos nodos tiene 1 hijo
     public int contarNodosConUnHijo(){
         int res;
-        int cont = 0;
+
         if(!estaVacio()){
             if(!izq.estaVacio() && der.estaVacio()){
                 res = 1;
